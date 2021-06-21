@@ -105,6 +105,11 @@
         display: none;
     }
 
+    .navigation ul
+    {
+	margin: 15px; 
+    }
+
 	.navigation a{
 		color: black;
 		font-weight: bolder;
