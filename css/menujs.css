@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+    .menujs 
+	{
+		height: auto;
+	}
+
+	.menujs ul
+	{
+		height: auto;
+		text-align: center;
+		margin-top: 40px;
+		padding-right: 30%;
+		padding-left: 30%;
+	}
+
+
+	.menujs li
+	{
+		background-color: #c0c0c0;
+		border-radius: 30px;
+		display: block;
+		margin-bottom: 1px;
+		border-bottom: solid grey 1px;  
+		width: 100%;
+		padding: 0;
+	}
+}

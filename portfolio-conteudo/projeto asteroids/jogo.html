@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Asteroids</title>
+		<link rel="icon" href="imagens/meteorboom1.png">
+
+	
+
+		<script src="jogo.js"></script> 
+		<script type="text/javascript">
+		function change() {
+		document.body.style.cursor="url('imagens/naves.png'), auto";
+		}
+		function remover() {
+		document.body.style.cursor="url('imagens/nave.png'), auto";
+		}
+
+		</script>
+
+	</head>
+
+	<style>
+		body { /*Formatando a Imagem de Fundo*/
+			background: url("imagens/1.png") no-repeat center center fixed;
+
+			background-size: cover;
+
+			-webkit-background-size: cover; /* SAFARI / CHROME */
+
+			-moz-background-size: cover; /* FIREFOX */
+
+			-ms-background-size: cover; /* IE */
+
+			-o-background-size: cover; /* OPERA */
+			}
+
+	</style>
+
+	<div onmousedown="change()" onmouseover="remover()"> <!--Função que muda a foto do cursos ao clique-->
+	<body onload="iniciaJogo()">
+		<div style="float:left; width:auto; height:500px; background: url('imagens/cenario1.jpg'); border-right: solid 1px #2B2B2B;"> <!--MONTAGEM DE CENARIO AQUI NO BODY, TIPO COLOCANDO MARGENS, ETC-->
+
+			<table border="0" style="width: 140px; height: 132px;">  
+				<tr>
+					<td>
+						<img src = "imagens/logo.jpg">
+					</td>
+				</tr>
+			</table>
+
+			<br>
+
+			<table border="0"> <!--Essas tabelas aonde ficam as imagens aonde eu vo por os pontos, tempo e etc, aonde ficara dentro dela a imagem dos baloes seja o do canto esquerdo que marca a pontuação, alem do fundo com os baloes que eu devo estourar. -->
+				<tr>
+					<td>
+						<img src="imagens/meteor1.png"> <!--Essa parte da tabela mostra os balões que faltam estourar em termos de pontuação a esquerda -->
+					</td>
+					<td>
+						<span id="baloes_inteiros" style="color: white; font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>
+
+			<br>
+			<table border="0"> <!--Essa parte da tabela mostra o balão estourado em termos de pontuação -->
+				<tr>
+					<td>
+						<img src="imagens/meteorboom1.png">
+					</td>
+					<td>
+						<span id="baloes_estourados" style=" color: white; font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>
+
+			<br/>
+			<table border="0" style="width: 140px; height: 132px;">  <!--Imagem de Fundo para o icone de cronometro, por que eu puz como imagem de fundo e nao src ??? pq eu keria que pegasse toda as partes dessa tabela, aqui mostrara o cronometro junto com o temp que falta para o jogo acabar oq tem relação com o nivel de dificuldade. eu ja tinha fixado o tamanho da tabela ja e eu queria que a imagem ficasse em todos os pontos entao eu puz como o background.-->
+				<tr>
+					<td style="background: url('imagens/cronometro.png'); text-align:center">
+						<span id="cronometro" style="color: white; font-size: 30px;"></span> <!--Aqui eu atribuo um id no qual eu vou referenciar na pagina do js -->
+					</td>
+				</tr>
+			</table>
+
+			<br><br><br>
+
+			<a style="color:orange; font-size: 20px;" href="intro.html">&larr; Voltar ao Menu</a>
+		</div>
+		<!--Formatando o cenário, botei uma largura e altura, botei para o cenario flutuar com o float para a esquerda da pagina junto com a div que tem as pontuações bem como o tempo, botei uma imagem de fundo decorativa para o "cenário" e ai vai, dei posição ao background para ficar mais embaixo tb pq estava cortando por conta dos pixels dessa tabela, o position vai encaixar o background sendo o ponto de partida o de baixo, cortando assim a parte de cima caso fique ao contrario, qualquer coisa poderia usar um overflow. -->
+		<div id="cenario" style="float: left; width: 600px; height: 500px; background: url('imagens/cenario1.jpg'); background-position: bottom;"></div>
+
+	</body>
+</div>
+	
+
+</html>

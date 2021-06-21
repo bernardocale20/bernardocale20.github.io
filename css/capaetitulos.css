@@ -1,0 +1,150 @@
+.capa span
+{
+	color: #F27609;
+	display: block; 
+}
+
+.capa div 
+{
+	display: inline-block; 
+	height:650px; 
+}
+
+.profile-pic
+{
+	width:40%;  
+	text-align: center;
+	animation-name: profile-capa;
+	animation-duration: 3s;	
+}
+
+.profile-pic img
+{
+	width: 350px;
+	border-radius: 320px; 
+	margin-top: 50px;
+
+}
+
+.profile-title
+{
+	vertical-align: top;
+	width:59%;  
+	animation-name: titulo-capa;
+	animation-duration: 3s;
+}
+
+.profile-title h1
+{
+	text-transform: uppercase;
+	font-size: 58px;
+	margin-top: 90px;
+	font-weight: 400;
+	line-height: 55px;
+	color: #708090;
+}
+
+
+.profile-title h2
+{
+	color:white;
+	font-size: 25px;
+	font-weight: 100; 
+	margin-top: -26px ;
+	display: inline-block;
+}
+
+.profile-title img
+{
+	display: inline-block;
+	width: 33px; 
+	height: 33px;
+}
+
+.esconde
+{
+    display:none;
+}
+
+@media (min-width: 1000px){
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 999px){
+    .capa div 
+    {
+        height:400px; 
+    }
+
+    .profile-pic 
+    {
+        width: 100%;
+    }
+
+    .profile-pic img
+    {
+        margin-top: 40px;
+    }
+
+    .profile-title
+    {	
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-title h1
+    {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .capa div
+	{
+		height: auto;
+	}
+
+    .profile-pic 
+	{
+		width: 100%;
+	}
+
+	.profile-pic img
+	{
+		margin-top: 0;
+		max-width: 80%;  
+	}
+
+	.profile-title
+	{	
+		text-align: center;
+		width: 100%;
+	}
+
+
+	.profile-title h1
+	{
+		margin-top: 30px;
+		font-size: 40px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.profile-title h2
+	{
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		white-space: pre-wrap;
+		font-weight: 400;
+	}
+
+    .esconde
+	{
+		color: white;
+        display: block;
+		margin-top: -20px;
+	}
+}

@@ -1,0 +1,103 @@
+.main
+{
+	padding: 80px 180px 80px 100px;
+	animation-name: conteudo;
+	animation-duration: 2s;
+}
+
+.main h1
+{
+	color: white;
+	font-weight: normal;
+}
+
+.main h2
+{
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 40px;
+}
+
+.main h3
+{
+	color: #f27609;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.main p
+{
+	color: white;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 25px;
+	font-weight: 400;
+	text-align: justify; 
+}
+
+
+.caminho 
+{
+	list-style: none;
+	padding-left: 0;
+	color:grey;
+	
+}
+
+.caminho li
+{
+	display: inline-block;
+	font-size: 20px;
+	color: #fff;
+}
+
+.caminho a{
+	color: #fff;;
+}
+
+.back-link
+{
+	color: #F27609;
+}
+
+
+@media (min-width: 1000px){
+
+}
+
+
+@media (min-width: 768px) and (max-width: 999px){
+    .main{
+		padding: 60px;
+	}
+}
+
+
+@media (max-width: 767px) {
+    .main
+	{
+		padding: 10px 5% 40px 5%;
+		animation-name: conteudo;
+		animation-duration: 2s;
+	}
+	
+	.main a
+	{
+		overflow-wrap: break-word; 
+		word-wrap: break-word; 
+	}
+
+	.main p
+	{
+		text-align: left;
+		line-height: 30px;
+	}
+
+    .caminho li
+	{
+		font-size: 16px;
+	}
+
+}

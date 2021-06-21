@@ -1,0 +1,174 @@
+.sobre
+{
+	background: url('../img/imgsobre.jpg') no-repeat;
+	animation-name: navegacao;
+	animation-duration: 2s;
+}
+
+
+@media (min-width: 1000px){
+    .sobre
+	{
+	 	border-radius: 90px;
+	 	padding-top: 9px;
+	 	padding-left: -20px;
+	 	padding-right: -20px;
+	 	padding-bottom: 9px;
+	 	margin-right: 100px;
+	 	margin-left: 100px;
+	 	margin-top: -180px;
+		margin-bottom: 20px;
+	}
+
+	.sobre img
+	{
+		width: 25px; 
+		height: 25px;
+	}
+
+	.sobre h4
+	{
+		font-size: 18px;
+		text-align: center;
+		color: #708090;
+	}
+
+	.sobre span:first-of-type
+	{
+		color: orange;
+		margin-right: 10px;
+		border-right: 2px solid white;
+	}
+
+	.sobre a
+	{
+		color: orange;
+		text-decoration: none;
+		font-size: 20px;
+
+	}
+
+	.sobre a:hover
+	{
+		color: #B8860B;
+	}
+
+	.sobre p
+	{
+		color: #DCDCDC;
+		font-family: "arial";
+		font-size: 15px;
+		text-align: center;
+		margin-left: 100px ;
+		margin-right: 100px;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 999px){
+    .sobre
+	{
+	 	border-radius: 90px;
+	 	padding-top: 9px;
+	 	padding-left: -20px;
+	 	padding-right: -20px;
+	 	padding-bottom: 9px;
+	 	margin-right: 50px;
+	 	margin-left: 50px;
+	 	margin-top: -80px;
+		margin-bottom: 20px;
+	}
+
+	.sobre img
+	{
+		width: 25px; 
+		height: 25px;
+	}
+
+	.sobre h4
+	{
+		font-size: 18px;
+		text-align: center;
+		color: #708090;
+	}
+
+	.sobre span:first-of-type
+	{
+		display: block;
+		color: orange;
+		margin-right: 10px;
+		border-right: none;
+		margin-bottom: 15px;
+	}
+
+	.sobre a
+	{
+		padding-top: 25px;
+		font-size: 24px;
+		color: orange;
+		text-decoration: none;
+		display: block;
+	}
+
+	.sobre a:hover
+	{
+		color: #B8860B;
+	}
+
+	.sobre p
+	{
+		color: #DCDCDC;
+		font-family: "arial";
+		font-size: 15px;
+		text-align: center;
+		margin-left: 100px ;
+		margin-right: 100px;
+	}
+
+}
+
+
+@media (max-width: 767px) {
+    .sobre
+	{
+		margin-top: 60px;
+		margin-bottom: 35px;
+		border-radius: 60px;
+		text-align: center;
+		font-family: calibri;
+		font-size: 22px;
+		color: #DCDCDC;
+		overflow: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+
+	}
+
+	.sobre p
+	{
+		font-size: 18px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	.sobre img
+	{
+		width: 25px; 
+		height: 25px;
+	}
+
+	.sobre a
+	{
+		padding-top: 25px;
+		font-size: 24px;
+		color: orange;
+		text-decoration: none;
+		display: block;
+	}
+
+	.sobre span{
+		color: orange;
+		font-size: 17px;
+	}
+}

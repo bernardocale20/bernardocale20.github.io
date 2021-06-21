@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="iconc.png">
+
+		<title>Calculadora</title>
+
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<style type="text/css">
+			.jumbotron
+			{
+				padding: 10px 10px 10px 10px;
+				margin-top: 15px;
+			}
+		</style>
+
+
+
+	
+		<script type="text/javascript">
+			function calcular(){
+				var operacao = document.getElementById('operacao').value;
+				
+				var num1 = document.getElementById('num1').value;
+				
+				var num2 = document.getElementById('num2').value;
+				
+			
+				num1 = parseFloat(num1);
+				num2 = parseFloat(num2);
+			
+		
+				var resultado = null;
+				
+				//Operações
+				switch(operacao){
+				
+					case '1': //adição
+						resultado = num1 + num2;
+						break;
+					
+					case '2': //subtração
+						resultado = num1 - num2;
+						break;
+					
+					case '3': //multiplicação
+						resultado = num1 * num2;
+						break;
+					
+					case '4': //divisão
+						resultado = num1 / num2;
+						break;
+
+					case '5': //resto
+						resultado = num1 % num2;
+						break;
+
+					case '6': //bases elevadas
+						resultado = Math.pow(num1, num2);
+						break;
+
+					case '7': //raiz quadrada
+						resultado = Math.sqrt(num1);
+						break;
+
+					case '8': //raiz cúbica
+						resultado = Math.cbrt(num1);
+						break;
+					
+					default:
+						alert('Favor selecionar uma operação.');
+						return false; //Retorna valor falso, conhecido como NaN
+				}
+				
+				document.getElementById('resultado').value = resultado;
+				
+				
+			}
+		</script>
+	</head>
+
+	<body onmouseover="change()" style="background:black">
+		
+
+		<div class="container">
+			<div class="jumbotron">
+				<h1>CALCULADORA PERSONALIZADA</h1> <br>
+
+				<h5>OBS: </h5>
+				<h5>-Para utilizar a função de calcular bases elevadas, insira no primeiro retangulo a base e no segundo o expoente.</h5>
+				<h5>-Para utilizar a função de cálcular raizes quadradas ou cúbicas, insira um valor que você queira calcular apenas no primeiro retângulo e deixe o segundo vazio.</h5>
+				<br>
+			</div>
+
+			<hr>
+
+			<div class="row"> 
+				<div class="col-md-4">
+					<input id="num1" type="number" class="form-control" placeholder="Digite um número" />
+				</div>
+
+				<div class="col-md-4"> 
+					<select id="operacao" class="form-control">
+						<option value="">--Selecione uma operação</option>
+						<option value="1">Adição</option>
+						<option value="2">Subtração</option>
+						<option value="3">Multiplicação</option>
+						<option value="4">Divisão</option>
+						<option value="5">Resto</option>
+						<option value="6">Base Elevada</option>
+						<option value="7">Raiz Quadrada</option>
+						<option value="8">Raiz Cúbica</option>
+						
+					</select>
+				</div>
+
+				<div class="col-md-4"> 
+					<input id="num2" type="number" class="form-control" placeholder="Digite um número"/>
+				</div>
+			</div>
+
+
+			<hr> 
+
+			<div class="well">
+				Resultado: <input id="resultado" type="text" class="form-control" readonly/>
+			</div>
+
+
+	
+			
+
+
+				<div class="text-center">
+					<button type="button" class="btn btn-lg btn-primary pull-right" onclick="calcular()">Calcular</button>
+				</div>
+
+
+			
+
+				
+				
+
+			<a style="color:orange; font-size: 20px;" href="../../portfolio.html"><u> &larr; Voltar ao Portfólio </u></a>
+			<
+		</div>
+
+		<br><br>
+	</body>
+</html>

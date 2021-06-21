@@ -1,0 +1,27 @@
+@keyframes profile-capa 
+{
+	0% {opacity: 0; transform: translate(0px,20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+
+@keyframes titulo-capa 
+{
+	0% {opacity: 0; transform: translate(0px,-20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+
+}
+
+
+@keyframes conteudo
+{
+	0% {opacity: 0; transform: translate(-20px,0px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes navegacao 
+{
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}

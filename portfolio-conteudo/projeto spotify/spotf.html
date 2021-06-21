@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Plugin para dar compatibilidade ao html5 em navegadores antigos como IE versão 8 ou menor-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Título com ícone-->
+    <title>Música para todos - Spotify</title>
+    <link rel="icon" href="imgs/spotfav.jpg">
+
+    <!-- Bootstrap + Descrição dos Plugins de Compatibilidade -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css1/estilos1.css" rel="stylesheet">
+
+   		 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   		 <!--[if lt IE 9]>
+    	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    	 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   		 <![endif]-->
+
+
+
+  </head>
+
+  <body>
+
+  	<!--Classe do bootstrap Nav-bar é usada para criar uma barra de navegação e a segunda classe denomina que ela estará fixa ao topo-->
+  	<!-- o navbar inverse inverte o navbar eu antes tinha um h1 escrito spotify e dps botei uma foto no msm lugar com borda por tras ai ficava com o h1 na frente e uma sombra
+  		transparente da imagem por tras do background branco do navbar, com o inverse a imagem fica por cima e o h1 fica por cima, com uma propriedade de dar transparent eu tirei a permissao do h1 de ficar aparecendo junto com a img no meu css customizado-->
+  	<!-- tambem criei uma classe customizada a navbar-transparente que eu vou formatar no css-->
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+
+    	<!-- Container que vai segurar tudo dentro de um box -->
+    	<div class="container"> 
+
+    		<!--header-->
+    		<div class="navbar-header">
+
+
+    		<!-- botão toggle (ativar/desativar) + O ícone de 3 barras, uma barra embaixo da outra.-->
+    		<!-- sobre o botão eu dei o tipo dele e a classe que com o navbar-toggle da ma função de ativar e desativar e quando ela for clicada/interagida
+    		 essa função ira tornar a classe collapsed ou seja, vai focultala, dai eu dei o toggle que vai dar o comando collapse que novamente ira fazer ela aparecer
+    		 e o data-target é o alvo, é de onde eu vou puxar o id que eu declarei na classe do navbar que é em si um collapse ou seja quando essa barra for ativada ela ira retornar o id que antes era collapsed e mostrara os menus que estavam ocultos e ao ser clicada denovo ela vai se fechar oq faz ela fechar "collapse" e vai fechar ocultando denovo, isso da maior responsividade ao site que juntamente com o comando abaixo na div acima da lista ul que eu puz para ocultar as opções da navbar. -->
+    		<button type="button" class="navbar-toggle collapsed"
+    				data-toggle="collapse" data-target="#barra-navegacao">
+    			<!-- classe sr-only remete o sistema ARIA, útil para leitores de tela para pessoas com problemas visuais por exemplo-->
+    			<span class="sr-only">Alternar Navegação</span>
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    		</button>
+
+    		<!-- criando o logo do spotify que tambem é um link e serve como título sem ser da url-->
+    		<a href="index.html" class ="navbar-brand"> 
+    			<span class="img-logo">Spotify</span>
+    		 </a>
+
+
+    		</div>
+
+
+    
+    		<!-- Navbar (Barra de Navegação) -->
+    		<!-- Programando que a barra fica escondida num dispositivo pequeno e so aparece ao apertar um botao, bom pra celular, igual a do meu site, e para o lado direito de posição -->
+    		<!-- o comando abaixo collapse navbar-collapse oculta a barra em resoluções pequenas, se eu dar um id e chama-lo no conjunto ali em cima eu posso fazer um botão igual ao do meu site de 3 icones-->
+    		<div class="collapse navbar-collapse" id="barra-navegacao">
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a href="">Premium</a></li>
+    				<li><a href="">Ajuda</a></li>
+    				<li><a href="">Baixar</a></li>
+    				<!--O Hidden-XS faz com que aquele traço da barra de navegação nao apareça em smartphones-->
+    				<li class="divisor hidden-xs" role="separator"></li>
+    				<li><a href="">Inscrever-se</a></li>
+    				<li><a href="">Entrar</a></li>
+    				
+    			</ul>
+
+
+    		</div>
+
+    	</div>
+    </nav>
+
+
+
+    <!--Capa do Site + Butões -->
+
+    <div class="capa">
+    	<div class="texto-capa">
+            <p>(Este site é apenas uma recriação do spotify com pequenas alterações em termos de design, ele foi feito para treinar e como aplicar as classes do bootstrap, dentre outros conceitos)</p>
+    		<h1>Música para Todos</h1>
+    		<a href="" class="btn btn-custom btn-roxo btn-lg">Aproveite o Spotify Free</a>
+    		<a href="" class="btn btn-custom btn-branco btn-lg">Obter Spotify Premium</a>
+    		
+
+    	</div>
+
+
+    </div>
+
+    <!--Conteúdos -->
+    <section id="servicos">
+    	<div class="container">
+    		<div class="row">
+
+    			<!--Álbuns--> 
+    			<div class="col-md-6">  <!--Relembrando o col-md-6, o col divide a grid e a usa num espaço de 6 de 12, 
+    				com o md eu defino um tamanho médio -->
+    				<div class="row albuns">
+    				<!--Eu uso o row porque embaixo eu estaria criando tipo uma coluna, com o col que divide o sistema de grid, todas elas possuem um padding
+    				natural pré-definido, tipo um vão entre elas, não é obrigatório usar o row, mas com o row esse padding é consertado,
+    					lembrando que se um elemento de uma grid passar de 12 ele cai pra linha de baixo. -->
+    					<div class="col-md-6">
+    						<img src="imgs/img1.jpg" class="img-responsive">
+    					</div>
+
+    					<div class="col-md-6">
+    						<img src="imgs/img2.jpg" class="img-responsive">
+    					</div>
+
+    				</div>
+
+
+
+    				<div class="row albuns">
+
+    					<div class="col-md-6">
+    						<img src="imgs/img3.jpg" class="img-responsive">
+    					</div>
+
+    					<div class="col-md-6">
+    						<img src="imgs/img4.jpg" class="img-responsive">
+    					</div>
+
+    				</div>
+
+    			</div>
+
+    			<!--Álbuns--> 
+    			<div class="col-md-6"> 
+    				<h2>O que o Spotify tem?</h2>
+
+    				<h3>Músicas</h3>
+    				<p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+
+    				<h3>Playlists</h3>
+    				<p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
+
+    				<h3>Novos Lançamentos</h3>
+    				<p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+    			</div>
+
+    		</div>
+    	</div>
+	</section>
+
+
+	<section id="recursos">
+		<div class="container">
+			<div class="row">
+				<!-- recursos -->
+				<div class="col-md-4">
+					<h2>O que o Spotify tem?</h2>
+
+    				<h3>Músicas</h3>
+    				<p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+
+    				<h3>Playlists</h3>
+    				<p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
+
+    				<h3>Novos Lançamentos</h3>
+    				<p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+				</div>
+
+				<!-- img recursos -->
+				<div class="col-md-8">
+					<div class="row rotacionar">
+
+    					<div class="col-md-6">
+    						<img src="imgs/iphone1.png" class="img-responsive">
+    					</div>
+
+    					<div class="col-md-6">
+    						<img src="imgs/iphone2.png" class="img-responsive">
+    					</div>
+    				</div>
+
+				</div>
+
+
+			</div>
+		</div>
+		
+
+	</section>
+
+    <!--Rodapé -->
+    <footer id="rodape">
+    	<div class="container">
+    		<div class="row">
+
+    			<div class="col-md-2">
+    				<span class="img-logo">Spotify</span>  <br>
+    			</div>
+
+
+    			<div class="col-md-2">
+    				<h4>Company</h4>
+    				<ul class="nav">
+    					<li><a href="">Sobre</a></li>
+    					<li><a href="">Empregos</a></li>
+    					<li><a href="">Imprensa</a></li>
+    					<li><a href="">Novidades</a></li>
+    				</ul>
+    			</div>
+
+    			<div class="col-md-2">
+    				<h4>Comunidades</h4>
+    				<ul class="nav">
+    					<li><a href="">Artistas</a></li>
+    					<li><a href="">Desenvolvedores</a></li>
+    					<li><a href="">Marcas</a></li>
+    				</ul>
+    			</div>
+
+
+    			<div class="col-md-2">
+    				<h4>Links Úteis</h4>
+    				<ul class="nav">
+    					<li><a href="">Ajuda</a></li>
+    					<li><a href="">Presentes</a></li>
+    					<li><a href="">Player da Web</a></li>
+    				</ul>
+    			</div>
+
+    			<div class="col-md-4">
+    				<ul class="nav">
+    					<li class="item-rede-social"><a href=""><img src="imgs/facebook.png"></a></li>
+    					<li class="item-rede-social"><a href=""><img src="imgs/twitter.png"></a></li>
+    					<li class="item-rede-social"><a href=""><img src="imgs/instagram.png"></a></li>
+    				</ul>
+    				<br><br><br>
+    				 <a style="color:orange; font-size: 20px; float: right;" href="../../portfolio.html">&larr; <u> Voltar ao Portfólio </u></a>
+    			</div>
+
+
+    		</div>
+    	</div>
+    </footer>
+
+    <br><br>
+
+  	<!--Scripts para carregar js no Bootstrap serão jogados aqui dentro-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

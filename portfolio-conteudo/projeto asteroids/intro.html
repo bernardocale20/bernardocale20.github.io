@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Asteroids</title>
+		<link rel="icon" href="imagens/meteorboom1.png">
+
+		<script language='Javascript'>  //Script do JS programando o botão inicia jogo, recuperando por exemplo a seleção das dificuldades e ira me levar para a pagina do jogo.
+			
+			function iniciaJogo(){
+				var nivel_jogo = document.getElementById('nivel_jogo').value; //Variavel nivel_jogo recupera o valor do elemento ali embaixo dos select que tem o id de mesmo nome que foi chamado, tem que colocar um value e eu tambem poderia testar usando um alert que quando for clicado por exemplo mostraria uma msg e o value é um atributo, nao função ou parametro.
+
+				window.location.href = 'jogo.html?'+nivel_jogo;  //Esse comando muda o atributo da url do navegador, nao é mto comum é mais facil usar um form e recuperar mas tb serve, eh o href do js.
+				//E eu concatenei a url que vai ter esse endereço ai de jogo.html? com a variavel de nivel de jogo entao dependendo da dificuldade que eu escolher na url vai aparecer 1 se for facil, 2 se for normal e ai vai.
+				
+			}
+		</script>
+
+	</head>
+
+	<style>
+		body {
+			background: url("imagens/1.png") no-repeat center center fixed;
+
+			background-size: cover;
+
+			-webkit-background-size: cover; /* SAFARI / CHROME */
+
+			-moz-background-size: cover; /* FIREFOX */
+
+			-ms-background-size: cover; /* IE */
+
+			-o-background-size: cover; /* OPERA */
+			}
+
+		a
+		{
+			color: orange;
+			font-size: 20px;
+		}
+
+	</style>
+
+
+	<body onmouseover="change()">
+
+		<div>
+			<p> <!--Nessa div eu coloquei um select com options para niveis de dificuldade que alteram por exemplo o tempo do joguinho, cada uma com um valor. -->
+				<b style="color:white">Nível de Dificuldade: </b>
+				<select id="nivel_jogo">
+					<option value="1">Fácil</option>
+					<option value="2">Normal</option>
+					<option value="3">Difícil</option>
+				</select>
+			</p>
+
+			<br> <!--IMAGEM DE SELEÇÃO, QUANDO O BOTÃO FOR CLICADO INICIA O JOGO, CHAMANDO A FUNÇÃO INICIA JOGO ALI EM CIMA PELO SCRIPT JS E RECUPERANDO OS VALORES DO SELECT (NIVEL_JOGO)
+			chamando pelo seu id que eu dei a ele atraves do comando getElementById -->
+			<!--AO CLICAR CHAMA A FUNÇÃO INICIA JOGO -->
+			<img src="imagens/logo1.jpg" onclick="iniciaJogo()">
+
+			<br> <br>
+			<h2 style="color:white">Objetivo: Destrua todos os 104 asteroides antes que o tempo acabe. </h2> <br> 
+			<h3 style="color:white">Antes de começar, selecione o nivel de dificuldade, sao 3 ao todo: Fácil, Normal e Difícil.</h3> 
+			<h3 style="color:white">Apos selecionar o nível de dificuldade clique no ícone <u>Play!</u> para começar a jogar.</h3> 
+			<h3 style="color:white">Os niveis de dificuldade alteram o tempo limite para o término do jogo, então fique atento! </h3> <br>
+			
+		
+
+			<h4 style="color:white">Projeto Asteroids: Feito com Html, CSS e JavaScript. </h4> 
+			<p style="color:white">Obs: Para jogar este jogo de forma mais otimizada, jogue-o por meio de navegadores desktop.</p>
+		
+			<br>
+			<a href="../../portfolio.html">&larr; Voltar ao Portfólio</a>
+
+		</div>
+
+	</body>
+	
+</html>
