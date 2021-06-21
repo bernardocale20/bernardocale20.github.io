@@ -11,23 +11,4 @@ body
 	font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width: 767px)
-{
-	body
-	{
-	   background-size: auto; 
-	}
-}
 
-
-/*
-@media (max-width: 767px)
-{
-	body
-	{
-	   background: url("../img/imgfundo.jpg") no-repeat; 
-           background-size: cover; 
-           background-attachment: fixed;
-	}
-}
-*/
