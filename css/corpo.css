@@ -13,7 +13,11 @@ body
 
 @media (max-width: 767px)
 {
-	background: url("../img/imgfundomobile.jpg") no-repeat; 
-	background-size: cover; 
+	body
+	{
+	   background: url("../img/imgfundomobile.jpg") no-repeat; 
+           background-size: cover; 
+           background-attachment: fixed;
+	}
 }
 
