@@ -15,7 +15,7 @@ body
 {
 	body
 	{
-	   background: url("../img/imgfundo.jpg") no-repeat; 
+	   background: url("../img/imgfundo.jpg") no-repeat !important; 
            background-size: cover; 
            background-attachment: fixed;
 	}
