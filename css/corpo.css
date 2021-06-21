@@ -16,7 +16,7 @@ body
 	body
 	{
 	   background-size: auto; 
-           background-attachment: scroll;
+           background-attachment: fixed;
 	}
 }
 
